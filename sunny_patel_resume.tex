@@ -48,10 +48,23 @@
 
 %-------------------------
 % Custom commands
-\newcommand{\resumeItem}[2]{
+% \newcommand{\resumeItem}[2]{
+%   \item\small{
+%     \textbf{#1}{: #2 \vspace{-2pt}}
+%   }
+% }
+
+\newcommand{\resumeItem}[1]{
   \item\small{
-    \textbf{#1}{: #2 \vspace{-2pt}}
+    {#1 \vspace{-3pt}}
   }
+}
+
+\newcommand{\resumeProjectheading}[2]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+    \end{tabular*}\vspace{-5pt}
 }
 
 % Just in case someone needs a heading that does not need to be in a list
@@ -93,8 +106,8 @@
 
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\href{https://sourabhbajaj.com/}{\Large Sunny Patel}} & Email: \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
-  \href{https://sourabhbajaj.com/}{sourabhbajaj.com} & Mobile: \href{tel:+11234567890}{+1-123-456-7890} \\
+  \textbf{\Large Sunny Patel} & Email: \href{mailto:patel.sunny.n.00@gmail.com}{patel.sunny.n.00@gmail.com}\\
+  \href{https://www.linkedin.com/in/sunny-n-patel/}{linkedin.com/in/sunny-n-patel/} & Mobile: \href{tel:+16307886265}{+1-630-788-6265} \\
 \end{tabular*}
 
 
@@ -102,12 +115,13 @@
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Georgia Institute of Technology}{Atlanta, GA}
-      {Master of Science in Computer Science; GPA: 4.00}{Aug 2012 -- Dec 2013}
-    \resumeSubheading
-      {Birla Institute of Technology and Science}{Pilani, India}
-      {Bachelor of Engineering in Electrical and Electronics; GPA: 3.66 (9.15/10.0)}{Aug 2008 -- July 2012}
-  \resumeSubHeadingListEnd
+      {University of Illinois in Urbana-Champaign}{Champaign, IL}
+      {Bachelor of Engineering Physics, specialization in Computational Physics}{Aug 2018 -- May 2022}
+    \resumeSubHeadingListEnd
+
+%\item\small{
+%  \textbf{#1}{: #2 \vspace{-2pt}}
+%  }
 
 
 %-----------EXPERIENCE-----------------
@@ -115,13 +129,15 @@
   \resumeSubHeadingListStart
 
     \resumeSubheading
-      {Google}{Mountain View, CA}
-      {Software Engineer}{Oct 2016 -- Present}
+      {Cognizant}{Rockford, IL}
+      {Software Engineer}{Jul 2023 -- Present}
       \resumeItemListStart
-        \resumeItem{TensorFlow}
-          {TensorFlow is an open source software library for numerical computation using data flow graphs; primarily used for training deep learning models. Worked on APIs and performance for training models on Tensor Processing Units (TPU).}
-        \resumeItem{Apache Beam}
-          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines, as well as a set of language-specific SDKs for constructing pipelines and runners.}
+        \resumeItem{Refined the virtual golden image for developer environments, ensuring compliance with package and security requirements, resulting in a 2-hour reduction in setup time per deployment.}
+        \resumeItem{Developed Python and C++ scripts in a Linux environment for airplane equipment testing at Collins Aerospace} 
+        \resumeItem{Provided active in-person support to test engineers for requirement-based testing}
+        \resumeItem{Implemented a precision timing algorithm that calculates time delay between sending and receiving messages on an IRIG system}
+        \resumeItem{Improved database functionality by 33\% to software/hardware integration scripts}
+        \resumeItem{Consistently delivered tasks in an Agile environment, completing 95\% of tasks on or ahead of schedule}
       \resumeItemListEnd
       
 % --------Multiple Positions Heading------------
@@ -135,48 +151,33 @@
 %-------------------------------------------
 
     \resumeSubheading
-      {Coursera}{Mountain View, CA}
-      {Senior Software Engineer}{Jan 2014 -- Oct 2016}
+      {USGS Illinois Water Science Center}{Champaign, IL}
+      {Data Analyst/IT Programmer Intern}{Aug 2021 -- Aug 2022}
       \resumeItemListStart
-        \resumeItem{Notifications}
-          {Service for sending email, push and in-app notifications. Involved in features such as delivery time optimization, tracking, queuing and A/B testing. Built an internal app to run batch campaigns for marketing etc.}
-        \resumeItem{Nostos}
-          {Bulk data processing and injection service from Hadoop to Cassandra and provides a thin REST layer on top for serving offline computed data online.}
-        \resumeItem{Workflows}
-          {Dataduct an open source workflow framework to create and manage data pipelines leveraging reusables patterns to expedite developer productivity.}
-        \resumeItem{Data Collection}
-          {Designed the internal survey and crowdsourcing platform which allowed for creating various tasks for crowdsourcing or embedding surveys across the Coursera platform.}
-        \resumeItem{Dev Environment}
-          {Analytics environment based on Docker and AWS, standardized the Python and R dependencies. Wrote the core libraries that are shared by all data scientists.}
-        \resumeItem{Data Warehousing}
-          {Setup, schema design and management of Amazon Redshift. Built an internal app for access to the data using a web interface. Dataduct integration for daily ETL injection into Redshift.}
-        \resumeItem{Recommendations}
-          {Core service for all recommendation systems at Coursera, currently used on the homepage and throughout the content discovery process. Worked on both offline training and online serving.}
-        \resumeItem{Content Discovery}
-          {Improved content discovery by building a new onboarding experience on coursera. Used this to personalize the search and browse experience. Also worked on ranking and indexing improvements.}
-        \resumeItem{Course Dashboards}
-          {Instructor dashboards and learner surveying tools, which helped instructors run their class better by providing data on Assignments and Learner Activity.}
+        \resumeItem{Updated and maintained Python code used for water-resources analysis and data delivery using SciPy and Pandas}
+        \resumeItem{Constructed a user interface using Microsoft Power Apps to modernize the logging of water research equipment}
+        \resumeItem{Acted as a tech liaison to onboard and train a new team of employees}
+        \resumeItem{Set up machines and docking stations required for the transition back to in-person work}
       \resumeItemListEnd
 
     \resumeSubheading
-      {Lucena Research}{Atlanta, GA}
-      {Data Scientist}{Summer 2012 and 2013}
+      {Programming for Engineers and Sciencists}{Champaign, IL}
+      {Course Assistant}{Aug 2021 -- May 2022}
       \resumeItemListStart
-        \resumeItem{Portfolio Management}
-          {Created models for portfolio hedging, portfolio optimization and price forecasting. Also created a strategy backtesting engine used for simulating and backtesting strategies.}
-        \resumeItem{QuantDesk}
-          {Python backend for a web application used by hedge fund managers for portfolio management.}
+        \resumeItem{Supported a course professor in teaching engineering students Python and MATLAB}
+        \resumeItem{Led class of 15+ students to work through exercises to challenge programming concepts explored during lectures}
+        \resumeItem{Hosted office hours in conjunction to biweekly classes to assist students in resolving programming blocks}
       \resumeItemListEnd
 
-    \resumeSubheading
-      {Georgia Institute of Technology}{Atlanta, GA}
-      {Research and Teaching Assistant}{Jan 2012 -- Dec 2013}
-      \resumeItemListStart
-        \resumeItem{Research Assistant -- Machine Learning}
-          {Research on machine learning for portfolio hedging and replication algorithms. Modeling low-risk \& continuous-return strategies. Developed the Python library QSTK.}
-        \resumeItem{Teaching Assistant -- Computational Investing}
-          {The online course on Coursera, had more than 100,000 students enrolled. It was featured on the 11 Alive News and the Atlanta Journal Constitution. Involved in creating assignment, exams and conducting recitation sessions. Also taught the on-campus version of the course.}
-      \resumeItemListEnd
+    % \resumeSubheading
+    %   {Georgia Institute of Technology}{Atlanta, GA}
+    %   {Research and Teaching Assistant}{Jan 2012 -- Dec 2013}
+    %   \resumeItemListStart
+    %     \resumeItem{Research Assistant -- Machine Learning}
+    %       {Research on machine learning for portfolio hedging and replication algorithms. Modeling low-risk \& continuous-return strategies. Developed the Python library QSTK.}
+    %     \resumeItem{Teaching Assistant -- Computational Investing}
+    %       {The online course on Coursera, had more than 100,000 students enrolled. It was featured on the 11 Alive News and the Atlanta Journal Constitution. Involved in creating assignment, exams and conducting recitation sessions. Also taught the on-campus version of the course.}
+    %   \resumeItemListEnd
 
   \resumeSubHeadingListEnd
 
@@ -184,26 +185,52 @@
 %-----------PROJECTS-----------------
 \section{Projects}
   \resumeSubHeadingListStart
-    \resumeSubItem{QuantSoftware Toolkit}
-      {Open source Python library for financial data analysis and machine learning for finance.}
-    \resumeSubItem{GitHub Visualization}
-      {Data visualization of Git log data using D3 to analyze project trends over time.}
-    \resumeSubItem{Recommendation System}
-      {Music and movie recommender systems using collaborative filtering on public datasets.}
-    \resumeSubItem{Mac Setup}
-      {Book that gives step-by-step instructions on setting up developer environment on macOS.}
+    \resumeProjectheading
+      {Ecommerce Website}{Nov 2023 -- Jul 2023}
+      \resumeItemListStart
+        \resumeItem{Developed a single page application that allows users to make an account and order products online.}
+        \resumeItem{Included a Relational database of 6 tables stored in PostgreSQL }
+        \resumeItem{Created the frontend in React.js using the React-Bootstrap UI library}
+        \resumeItem{Handled the backend using Django Rest Frameworks with CRUD functionalities}
+      \resumeItemListEnd
+
+      \resumeProjectheading
+      {RATS (Roomba Acoustical Tracking System)}{Aug 2021 -- Dec 2021}
+      \resumeItemListStart
+        \resumeItem{Lead a project exploring the possibilities of using sound waves to triangulate a moving Roomba.}
+        \resumeItem{Engineered a circuit board to support components specific to our project, including an Adalogger, microphone, GPS, BME 680, Radio Transmitter, and a real time clock}
+        \resumeItem{Created the frontend in React.js using the React-Bootstrap UI library}
+        \resumeItem{Programmed Arduino and Python scripts computing a Fourier Transform of incoming sound waves to be used for triangulation}
+      \resumeItemListEnd
+
+      \resumeProjectheading
+      {Potential Majors App}{Feb 2021 -- May 2021}
+      \resumeItemListStart
+        \resumeItem{Developed a database of required classes for different majors and minors available at UIUC on Google Cloud Platform to ensure access between multiple machines}
+        \resumeItem{Collaborated in a group of four, where I oversaw the back-end development using Django; we leveraged MySQL queries for students to search for majors they are on progress to complete}
+        \resumeItem{Created the frontend in React.js using the React-Bootstrap UI library}
+        \resumeItem{Implemented the front-end using React.js and Bootstrap}
+      \resumeItemListEnd
+    % \resumeSubItem{QuantSoftware Toolkit}
+    %   {Open source Python library for financial data analysis and machine learning for finance.}
+    % \resumeSubItem{GitHub Visualization}
+    %   {Data visualization of Git log data using D3 to analyze project trends over time.}
+    % \resumeSubItem{Recommendation System}
+    %   {Music and movie recommender systems using collaborative filtering on public datasets.}
+    % \resumeSubItem{Mac Setup}
+    %   {Book that gives step-by-step instructions on setting up developer environment on macOS.}
   \resumeSubHeadingListEnd
 
 %
 %--------SKILLS------------
-%\section{Skills}
-%  \resumeSubHeadingListStart
-%    \item{
-%      \textbf{Languages}{: Scala, Python, JavaScript, C++, SQL, Java}
-%      \hfill
-%      \textbf{Technologies}{: AWS, Play, React, Kafka, GCE}
-%    }
-%  \resumeSubHeadingListEnd
+\section{Skills}
+ \resumeSubHeadingListStart
+   \item{
+     \textbf{Languages}{: Scala, Python, JavaScript, C++, SQL, Java}
+     \hfill
+     \textbf{Technologies}{: AWS, Play, React, Kafka, GCE}
+   }
+ \resumeSubHeadingListEnd
 
 
 %-------------------------------------------
