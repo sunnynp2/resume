@@ -17,6 +17,8 @@
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
 \input{glyphtounicode}
 
 \pagestyle{fancy}
@@ -40,7 +42,7 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
+  \vspace{-6pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 % Ensure that generate PDF is machine readable/ATS parsable
@@ -131,13 +133,13 @@
       {Belcan}{Rockford, IL}
       {Software Engineer}{Jul 2023 -- Present}
       \resumeItemListStart
-        \resumeItem{Developed Python and C++ scripts in a Linux environment for airplane equipment testing at Collins Aerospace}
-        \resumeItem{Implemented a precision timing algorithm that calculates time delay between two synchronized machines giving an accurate assessment of the state of a computer cluster as well as warning when the system is out of sync.}
-        \resumeItem{Enhanced database functionality by 33\% in software/hardware integration scripts by extending hostagent utilities, streamlining development and debugging for future projects.}
-        \resumeItem{Led the preparation and release of updated software tools for new tests, including modifying existing scripts to meet new requirements, writing validation scripts, and collaborating with test engineers to ensure quick iteration and deployment of solutions.}
-        \resumeItem{Refined the virtual golden image for developer environments, ensuring compliance with package and security requirements, resulting in a 3-hour reduction in setup time per deployment.}
-        % \resumeItem{Collaborated in-person with test engineers to execute and optimize requirement-based testing, ensuring high-quality deliverables and swift issue resolution.}
-        % \resumeItem{Consistently delivered tasks in an Agile environment, completing 95\% of tasks on or ahead of schedule}
+        \resumeItem{Developed real-time C++ software in a Linux environment to interface with and test distributed embedded hardware systems, communicating over hardware protocols like CAN to send simulated control and sensor data.}
+        \resumeItem{Built Python automation tools to generate test configurations, drive system-level test scenarios, and validate hardware responses against predefined requirements.}
+        \resumeItem{Supported hardware-in-the-loop (HIL) testing workflows by simulating system inputs and monitoring outputs across multiple synchronized machines.}
+        \resumeItem{Implemented a precision timing and synchronization algorithm to measure inter-machine latency and detect timing drift in clustered systems, improving system reliability and diagnostics.}
+        \resumeItem{Enhanced internal software-hardware integration tooling by extending shared utilities, improving debugging efficiency and scalability of future embedded test development.}
+        \resumeItem{Led preparation and release of updated test software, collaborating with systems and test engineers to rapidly iterate on requirements and deploy validated solutions.}
+        \resumeItem{Refined and maintained a standardized developer environment image, ensuring security and dependency compliance while reducing environment setup time by \raisebox{-0.5ex}{\textasciitilde{}}3 hours per deployment}
       \resumeItemListEnd
       
 % --------Multiple Positions Heading------------
@@ -154,19 +156,18 @@
       {USGS Illinois Water Science Center}{Champaign, IL}
       {Data Analyst/IT Programmer Intern}{Aug 2021 -- Aug 2022}
       \resumeItemListStart
-        \resumeItem{Updated and maintained Python code used for water-resources analysis and data delivery using SciPy and Pandas}
-        \resumeItem{Constructed a user interface using Microsoft Power Apps to modernize the logging of water research equipment}
+        \resumeItem{Maintained and enhanced Python-based data processing pipelines using Pandas and SciPy for scientific data analysis and delivery.}
+        \resumeItem{Constructed a user interface using Microsoft Power Apps to modernize logging for field equipment}
         \resumeItem{Acted as a tech liaison to onboard and train a new team of employees}
-        \resumeItem{Set up machines and docking stations required for the transition back to in-person work}
+        \resumeItem{Supported hardware setup and IT infrastructure during transition back to in-person operations}
       \resumeItemListEnd
 
     \resumeSubheading
       {Programming for Engineers and Scientists}{Champaign, IL}
       {Course Assistant}{Aug 2021 -- May 2022}
       \resumeItemListStart
-        \resumeItem{Supported a course professor in teaching engineering students Python and MATLAB}
-        \resumeItem{Led class of 15+ students to work through exercises to challenge programming concepts explored during lectures}
-        \resumeItem{Hosted office hours in conjunction to biweekly classes to assist students in resolving programming blocks}
+        \resumeItem{Assisted in teaching Python and MATLAB to engineering students, supporting coursework in numerical methods, data analysis, and scientific computing.}
+        \resumeItem{Hosted office hours to provide hands-on debugging and conceptual support on technical programming assignments.}
       \resumeItemListEnd
 
     % \resumeSubheading
@@ -181,7 +182,7 @@
 
   \resumeSubHeadingListEnd
 
-
+\vspace{-20pt}
 %-----------PROJECTS-----------------
 \section{Projects}
   \resumeSubHeadingListStart
@@ -198,16 +199,15 @@
       {RATS (Roomba Acoustical Tracking System)}{Aug 2021 -- Dec 2021}
       \resumeItemListStart
         \resumeItem{Lead a project exploring the possibilities of using sound waves to triangulate a moving Roomba.}
-        \resumeItem{Engineered a circuit board to support components specific to our project, including an Adalogger, microphone, GPS, BME 680, Radio Transmitter, and a real time clock}
-        \resumeItem{Created the frontend in React.js using the React-Bootstrap UI library}
-        \resumeItem{Programmed Arduino and Python scripts computing a Fourier Transform of incoming sound waves to be used for triangulation}
+        \resumeItem{Engineered a circuit board to support components including an Adalogger, microphone, GPS, BME 680, Radio Transmitter, and a real time clock}
+        \resumeItem{Programmed a Arduino and Python script to compute a Fourier Transform of incoming sound waves for triangulation}
       \resumeItemListEnd
 
       \resumeProjectheading
       {Potential Majors App}{Feb 2021 -- May 2021}
       \resumeItemListStart
-        \resumeItem{Developed a database of required classes for different majors and minors available at UIUC on Google Cloud Platform to ensure access between multiple machines}
-        \resumeItem{Collaborated in a group of four, where I oversaw the back-end development using Django; we leveraged MySQL queries for students to search for majors they are on progress to complete}
+        \resumeItem{Developed a database of required classes for different UIUC majors and minors hosted on Google Cloud Platform}
+        \resumeItem{leveraged MySQL queries for students to search for majors they are on progress to complete}
         \resumeItem{Implemented the front-end using React.js and Bootstrap}
       \resumeItemListEnd
     % \resumeSubItem{QuantSoftware Toolkit}
@@ -225,8 +225,7 @@
 \section{Skills}
  \resumeSubHeadingListStart
    \item{
-     \textbf{Languages}{: C++, Python, JavaScript, SQL, Java, HTML, C\#}
-    %  \hfill
+     \textbf{Languages}{: C++, Python, JavaScript, SQL, Java, HTML}
     }
   \item{
      \textbf{Technologies}{: Makefile, Git, Linux, Docker, React, Redux, Azure, AWS}
